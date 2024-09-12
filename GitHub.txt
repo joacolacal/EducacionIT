@@ -1,0 +1,108 @@
+GitHub:
+	Es el host de almacenamiento de repositorios
+	GIT más grande y es el punto central de
+	colaboración de millones de proyectos y
+	desarrolladores.
+	GitHub no es parte central de Git
+	
+	Usuario: joacolacal
+	Contraseña: .Carp2204.
+	
+	Remote:
+		Un repositorio remoto contiene versiones de
+		nuestros proyectos que están siendo
+		almacenadas en Internet o en algún otro lado.
+		
+		Cada proyecto en GitHub es accesible a través de
+		HTTPS como: https://github.com/joacolacal/EducacionIT.git
+		
+		O a través de SSH: git@github.com:joacolacal/EducacionIT.git
+		
+		…or create a new repository on the command line
+		echo "# EducacionIT" >> README.md
+			Este comando agrega (o crea) el texto # EducacionIT al archivo README.md
+		git init
+			Inicializa un nuevo repositorio Git en el directorio actual.
+		git add README.md
+			Añade el archivo README.md al área de preparación (staging area).
+		git commit -m "first commit"
+			Crea un commit con el mensaje "first commit".
+		git branch -M main
+			Renombra la rama actual a main.
+		git remote add origin git@github.com:joacolacal/EducacionIT.git
+			Configura la URL del repositorio remoto (en GitHub) donde se almacenará el proyecto, 
+			asociándolo con el nombre origin. Este comando le dice a Git que el repositorio 
+			remoto que quieres usar está en git@github.com:joacolacal/EducacionIT.git.
+		git push -u origin main
+			Sube los cambios locales a la rama main en el repositorio remoto origin.
+			La opción -u establece origin como el repositorio remoto predeterminado y 
+			main como la rama predeterminada, lo que significa que en futuras ocasiones 
+			solo necesitarás usar git push sin especificar la rama.
+		
+		…or push an existing repository from the command line
+		git remote add origin git@github.com:joacolacal/EducacionIT.git
+		git branch -M main
+		git push -u origin main
+		
+		Configurar remotes:
+			Para agregar un nuevo remoto a nuestro
+			repositorio Git, ejecutar el siguiente comando:
+			> git remote add <alias>
+			https://github.com/<usuario>/<nombre_del_proyecto>
+			
+		git remote add
+			Permite configurar un nuevo remoto con un
+			nombre fácil de referenciar y usarlo, luego, para
+			futuras operaciones sobre él. 
+			
+		git remote -v
+			revisar el listado de remotos, configurados en el repositorio Git
+			
+		git push (git push <remote> <branch>)
+			Si en tu proyecto deseas compartir el trabajo con
+			otros desarrolladores, se usan remotos para subir
+			los cambios
+			Este comando va a funcionar solo si:
+				● 	Se cuenta con permiso de escritura en ese
+					cliente remoto.
+				● 	Nadie subió cambios mientras realizábamos
+					e intentábamos subir los nuestros.
+			Se deben incorporar primero los cambios nuevos
+			subidos por las demás personas antes de poder
+			realizar un push.
+	
+	Organizaciones (“+” en la parte superior del lado derecho y seleccionar “New organization”):
+		GitHub tiene Organizaciones. 
+		Las cuentas de organización también cuentan
+		con un espacio donde se guardarán los
+		proyectos, pero en otras características son
+		diferentes que las de usuario:
+		● 	Representan un grupo de gente que
+			comparte la propiedad de los proyectos y,
+			además, se pueden gestionar a los miembros
+			en subgrupos.
+		● 	Normalmente, estas cuentas se usan en
+			equipos de desarrollo de código abierto (por
+			ejemplo, un grupo para “perl” o para “rails”) o
+			empresas (como Google o Twitter).
+			
+		Equipos:
+			Las organizaciones se asocian con individuos
+			mediante equipos.
+			Los equipos son simplemente agrupaciones de
+			cuentas de usuario y repositorios dentro de la
+			organización, más la información sobre qué
+			accesos tienen esas personas sobre cada
+			repositorio.
+			Los equipos hacen fácil esta organización, sin
+			tener que gestionar los colaboradores en cada
+			repositorio individual
+			
+			Para gestionar equipos:
+				Pulsar en la barra Teams, del lado derecho, en la
+				Página de la organización. Esta acción llevará a
+				una pantalla que brinda la posibilidad de añadir:
+					● Miembros del equipo.
+					● Repositorios al equipo.
+					● Gestionar los ajustes y niveles de acceso.
+
